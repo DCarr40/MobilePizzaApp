@@ -1,26 +1,20 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
-import {
-  Alert,
-  Button,
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  Vibration,
-  View,
-} from "react-native";
-import { createTwoPartAlert } from "./components/onPressFunctions";
+import { StatusBar } from "expo-status-bar";
+import { SafeAreaView, StyleSheet, Text, Image } from "react-native";
+import MyButton from "./components/Buttons/MyButton";
 
 export default function App() {
-  const createThreePartAlert = () => {
-    Alert.prompt("Button has been pressed!");
-  };
-
   return (
     <SafeAreaView style={styles.container}>
+      <Image
+        source={{
+          width: 200,
+          height: 300,
+          url: "https://picsum.photos/200/300",
+        }}
+      />
       <Text>MobilePizzaApp</Text>
-      <Button title="2 Part Alert!" onPress={createTwoPartAlert} />
-      <Button title="Let's Get Started" onPress={createThreePartAlert} />
+      <MyButton />
       <StatusBar style="auto" />
     </SafeAreaView>
   );
