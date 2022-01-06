@@ -6,7 +6,7 @@ export const HomePizzaImg = () => {
     Alert.alert("Mobile Pizza App Image has been pressed", "", [
       {
         text: "Pizza",
-        onPress: () => console.log("You want the Pizza"),
+        onPress: () => console.log("You want the Pizza!"),
       },
     ]);
   };

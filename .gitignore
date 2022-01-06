@@ -105,3 +105,6 @@ dist
 
 # .DS_Store
 .DS_Store
+
+# .expo/web/
+.expo/web/
